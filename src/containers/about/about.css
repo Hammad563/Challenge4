@@ -1,0 +1,68 @@
+.about-section{
+    text-align: center;
+}
+
+.inner-container{
+    align-content: center;
+}
+
+.aboutTitle{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    align-items: center;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.about-section img{
+    max-width: 40%;
+    max-height: 40%;
+}
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0px;
+    }
+    .inner-container{
+       padding: 0px;
+    }
+    .about-section img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .aboutTitle{
+        font-weight: 400;
+        text-align: center;
+    }
+}

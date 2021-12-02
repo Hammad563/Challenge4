@@ -1,0 +1,18 @@
+.pagination{
+    display: flex;
+    padding: 10px;
+    li:first-child{
+        border-left: 0.5px solid gray !important;
+    }
+    li{
+        list-style-type: none;
+        display: block;
+            padding: 1rem;
+            border: 0.5px solid gray;
+            border-left: nonse;
+        a{
+            padding: 5px;
+            color: rgb(82, 37, 37);
+        }
+    }
+}

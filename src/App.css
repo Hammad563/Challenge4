@@ -1,38 +1,294 @@
-.App {
-  text-align: center;
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+  font-family: 'roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+  --mainSlateBlue: #7B68EE;
+  --cadetBlue: #5F9EA0;
+   /* dark shades of primary color*/
+   --clr-primary-1: hsl(205, 86%, 17%);
+   --clr-primary-2: hsl(205, 77%, 27%);
+   --clr-primary-3: hsl(205, 72%, 37%);
+   --clr-primary-4: hsl(205, 63%, 48%);
+   /* primary/main color */
+   --clr-primary-5: hsl(205, 78%, 60%);
+   /* lighter shades of primary color */
+   --clr-primary-6: hsl(205, 89%, 70%);
+   --clr-primary-7: hsl(205, 90%, 76%);
+   --clr-primary-8: hsl(205, 86%, 81%);
+   --clr-primary-9: hsl(205, 90%, 88%);
+   --clr-primary-10: hsl(205, 100%, 96%);
+   /* darkest grey - used for headings */
+   --clr-grey-1: hsl(209, 61%, 16%);
+   --clr-grey-2: hsl(211, 39%, 23%);
+   --clr-grey-3: hsl(209, 34%, 30%);
+   --clr-grey-4: hsl(209, 28%, 39%);
+   /* grey used for paragraphs */
+   --clr-grey-5: hsl(210, 22%, 49%);
+   --clr-grey-6: hsl(209, 23%, 60%);
+   --clr-grey-7: hsl(211, 27%, 70%);
+   --clr-grey-8: hsl(210, 31%, 80%);
+   --clr-grey-9: hsl(212, 33%, 89%);
+   --clr-grey-10: hsl(210, 36%, 96%);
+   --clr-white: #fff;
+   --clr-red-dark: hsl(360, 67%, 44%);
+   --clr-red-light: hsl(360, 71%, 66%);
+   --clr-green-dark: hsl(125, 67%, 44%);
+   --clr-green-light: hsl(125, 71%, 66%);
+   --clr-black: #222;
+   --ff-primary: "Roboto", sans-serif;
+   --ff-secondary: "Open Sans", sans-serif;
+   --transition: all 0.3s linear;
+   --spacing: 0.1rem;
+   --radius: 0.25rem;
+   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   --max-width: 1170px;
+   --fixed-width: 620px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: var(--ff-secondary) !important;
+  background: var(--clr-grey-10) !important;
+  color: var(--clr-black) !important;
+}
+
+ul {
+  list-style-type: none !important ;
+}
+a {
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing) !important;
+  text-transform: capitalize !important;
+  line-height: 1.25 !important ;
+  margin-bottom: 0.75rem !important;
+  font-family: var(--ff-primary) !important;
+}
+h1 {
+  font-size: 3rem !important;
+  color: #2a2a72;
+}
+h2 {
+  font-size: 1rem !important;
+}
+h3 {
+  font-size: 1.0rem !important;
+}
+h4 {
+  font-size: 0.875rem !important;
+}
+p {
+  margin-bottom: 1.25rem !important;
+  color: var(--clr-grey-5) !important;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: rem !important;
+  }
+  h2 {
+    font-size: 2.0rem !important;
+  }
+  h3 {
+    font-size: 1.75rem !important;
+  }
+  h4 {
+    font-size: 1rem !important;
+  }
+  body {
+    font-size: 1rem !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.main-heading{
+  color: rgb(204,18,18);
+  font-size: 26px;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+
+.a-box{
+  background-color: #ffffff;
+  width:300px;
+  height: 450px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.a-b-img{
+  width: 100%;
+  height: 60%;
+
+}
+.a-b-img img{
+  padding: 15px;
+  width:100%;
+  height: 100%;
+
+}
+.a-box:hover{
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+.s-b-text{
+  width: 100%;
+  height: 40%;
+  background-color:#ffffff;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.s-b-text p{
+  margin: 0px;
+  color:#000266a6;
+  font-size: 1.1rem;
+  font-family: calibri;
+  display: block;
+  display: -webkit-box;
+  max-width: 80%;
+  margin-top: 25px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.s-b-text p:hover{
+  color:#000266;
+}
+.s-b-text a{
+  margin-top:15px ;
 }
 
-.App-link {
-  color: #61dafb;
+@media(max-width:768px){
+
+
+
+  .a-box{
+    background-color: #ffffff;
+    width:200px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  .a-b-img{
+    width: 100%;
+    height: 60%;
+  
+  }
+  .a-b-img img{
+    padding: 25px;
+    width:100%;
+    height: 100%;
+  
+  }
+
+  .s-b-text p{
+    margin: 0px;
+    color:#000266a6;
+    font-size: 0.8rem;
+    font-family: calibri;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    margin-top: 10px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-title {
+  font-family: 'Alegreya', serif  !important;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
+
+.text-blue {
+  color: var(--mainBlue);
+
+}
+
+.text-bright{
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+
+}
+
+.btn-black:hover {
+  background: var(--mainSlateBlue) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--cadetBlue);
+  
+}
+
