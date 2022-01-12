@@ -1,0 +1,44 @@
+.wrapper {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq{
+      width: 1140px;
+  }
+
+  .titlefaq{
+    padding-bottom: 40px;
+  }
+
+  .item{
+      background: none;
+      margin-bottom: 5px;
+      padding:10px
+  }
+
+  .question{
+   justify-content: space-between;
+   display: flex;
+   cursor: pointer;
+  }
+  .content{
+   display: none;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+  }
+
+  .content.show {
+    display: flex;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+  }
+
+  
+
+
+
+

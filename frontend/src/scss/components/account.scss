@@ -1,0 +1,45 @@
+
+.account{
+    background-color: #E8F6F3 ;
+    min-width: 350px;
+    height: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    &__section{
+        width: 100%;
+    }
+}
+
+.container2{
+    background: linear-gradient(135deg, #CD6155, #F2D7D5);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contain1{
+    background: linear-gradient(135deg, white, #F2D7D5);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.title1{
+    color: black ;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.forgotPassword{
+    font-size: 9px;
+    margin-left: 250px;
+}

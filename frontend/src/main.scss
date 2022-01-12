@@ -1,0 +1,21 @@
+// variables
+@import 'scss/variables/mixin.scss';
+@import 'scss/variables/variables.scss';
+@import 'scss/variables/extends.scss';
+
+// import scss layout
+@import 'scss/layout/_grid';
+
+// import base
+@import 'scss/base/_reset';
+
+// import scss utils
+@import 'scss/layout/util.scss';
+
+// components
+@import 'scss/components/navbar.scss';
+@import 'scss/components/bgImage.scss';
+@import 'scss/components/account.scss';
+@import 'scss/components/notFound.scss';
+@import 'scss/components/dashboard.scss';
+@import 'scss/components/pagination.scss';
